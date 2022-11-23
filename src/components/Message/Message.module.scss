@@ -1,0 +1,31 @@
+@use "../../styles/colors";
+
+.myMessageLine {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    margin-top: 4px;
+
+    .message {
+        background-color: colors.$dark-blue;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        text-align: end;
+    }
+}
+
+.messageLine {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    margin-top: 4px;
+
+    .message {
+        background-color: colors.$dark-blue;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+}

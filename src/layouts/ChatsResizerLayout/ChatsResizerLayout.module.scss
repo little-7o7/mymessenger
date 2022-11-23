@@ -1,0 +1,66 @@
+@use "../../styles/colors";
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: colors.$dark-blue;
+
+    .resizeable {
+        position: relative;
+        min-width: 300px;
+        max-width: 650px;
+        width: 400px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .searchPanel {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid colors.$messenger-borders;
+        }
+
+        .scroll {
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+
+            .chats {
+                display: flex;
+                flex-direction: column;
+            }
+
+            hr {
+                border: 0.2px solid colors.$messenger-borders;
+            }
+        }
+
+        .navigationPanel {
+            height: 60px;
+            border-top: 1px solid colors.$messenger-borders;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .resizer {
+            position: absolute;
+            border-right: 2px solid colors.$messenger-borders;
+            width: 5px;
+            height: 100%;
+            right: 0;
+            top: 0;
+            cursor: ew-resize;
+        }
+    }
+
+    .messenges {
+        width: 100%;
+        background-color: colors.$light-blue;
+    }
+}

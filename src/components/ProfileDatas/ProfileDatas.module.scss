@@ -1,0 +1,52 @@
+@use '../../styles/colors';
+@import 'react-image-crop/dist/ReactCrop.css';
+
+.datas {
+    display: flex;
+    flex-direction: column;
+
+    .borderedLineData {
+        border-bottom: 1px solid #4C546F;
+        margin: 6px 0;
+    }
+
+    .lineData {
+        padding: 0 0 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .opacity {
+            color: #9898B0;
+        }
+
+        span {
+            font-size: 17px;
+        }
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    .lineData {
+        padding: 0 0 8px 0;
+        width: 100%;
+        font-size: 15px;
+
+        span {
+            color: colors.$error-text;
+            cursor: pointer;
+        }
+
+        a {
+            color: colors.$link-text;
+        }
+    }
+
+    .borderedLineData {
+        border-bottom: 1px solid #4C546F;
+        margin: 5px 0;
+    }
+}
